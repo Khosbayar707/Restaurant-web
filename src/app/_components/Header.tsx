@@ -3,7 +3,7 @@ export default function Header() {
     <header>
       <div
         className="flex justify-around items-center p-4 w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('./assets/BG-image-light.jpg')" }}
+        style={{ backgroundImage: "url('./assets/BG-white-texture.jpg')" }}
       >
         <img src="./assets/Logo.png" alt="logo" className="w-[280px] h-auto" />
         <img src="./assets/Logo2.png" alt="logo" className="w-[100px] h-auto" />

@@ -3,7 +3,7 @@ export function AboutUs() {
     <div className="flex flex-col items-center space-y-4 py-8">
       <div
         className="w-[70%] mx-auto space-y-4 text-black bg-cover bg-center p-4"
-        style={{ backgroundImage: "url('./assets/BG-image-light.jpg')" }}
+        style={{ backgroundImage: "url('./assets/paper-texture.jpg')" }}
       >
         <h1 className="font-bold">About</h1>
         <p>

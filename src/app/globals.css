@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  font-family: var(--font-macondo), sans-serif;
+}
+
+h1,
+h2 {
+  font-family: var(--font-macondo), cursive;
+}
