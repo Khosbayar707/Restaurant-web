@@ -2,8 +2,8 @@ export function AboutUs() {
   return (
     <div className="flex flex-col items-center space-y-4 py-8">
       <div
-        className="w-[70%] h-[screen] mx-auto space-y-4 text-black bg-cover bg-center p-4"
-        style={{ backgroundImage: "url('./assets/paper-texture.jpg')" }}
+        className="w-[70%] h-screen mx-auto space-y-4 text-black bg-cover bg-center p-4"
+        style={{ backgroundImage: "url('/assets/paper-texture.jpg')" }} // ✅ No './'
       >
         <h1 className="font-bold">About</h1>
         <p>
@@ -19,7 +19,7 @@ export function AboutUs() {
           from Aynhoe Park Estate.
         </p>
         <p>
-          Our fish is supplied by Celtic Fish & Game, a family run business
+          Our fish is supplied by Celtic Fish & Game, a family-run business
           based in St. Ives, Cornwall. All their fish is landed daily from four
           local ports.
         </p>
@@ -29,10 +29,24 @@ export function AboutUs() {
           changing menu that reflects the most seasonal produce the country has
           to offer.
         </p>
-        <div className="flex flex-wrap mx-auto justify-around items-center space-x-4">
-          <img src="./assets/pic-1.jpg" alt="About Us" className="w-[250px]" />
-          <img src="./assets/pic-2.jpg" alt="About Us" className="w-[250px]" />
-          <img src="./assets/pic-3.jpg" alt="About Us" className="w-[250px]" />
+
+        {/* ✅ Grid Fix */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
+          <img
+            className="w-full h-auto border-4  p-2 shadow-lg bg-white"
+            src="/assets/pic-1.jpg"
+            alt="About Us"
+          />
+          <img
+            className="w-full h-auto border-4  p-2 shadow-lg bg-white"
+            src="/assets/pic-2.jpg"
+            alt="About Us"
+          />
+          <img
+            className="w-full h-auto border-4  p-2 shadow-lg bg-white"
+            src="/assets/pic-3.jpg"
+            alt="About Us"
+          />
         </div>
       </div>
     </div>
