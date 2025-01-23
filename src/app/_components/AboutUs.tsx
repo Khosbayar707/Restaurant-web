@@ -3,7 +3,7 @@ export function AboutUs() {
     <div className="flex flex-col items-center space-y-4 py-8">
       <div
         className="w-[70%] h-screen mx-auto space-y-4 text-black bg-cover bg-center p-4"
-        style={{ backgroundImage: "url('/assets/paper-texture.jpg')" }} // ✅ No './'
+        style={{ backgroundImage: "url('/assets/paper-texture.jpg')" }}
       >
         <h1 className="font-bold">About</h1>
         <p>
@@ -30,7 +30,6 @@ export function AboutUs() {
           to offer.
         </p>
 
-        {/* ✅ Grid Fix */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
           <img
             className="w-full h-auto border-4  p-2 shadow-lg bg-white"
