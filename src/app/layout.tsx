@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import { Geist, Geist_Mono, Macondo } from "next/font/google";
+import { Geist, Geist_Mono, Oswald } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const macondo = Macondo({
-  variable: "--font-macondo",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
   weight: "400",
 });
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${macondo.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased`}
       >
         <Header />
         {children}

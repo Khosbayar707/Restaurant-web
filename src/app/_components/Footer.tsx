@@ -3,9 +3,8 @@ export default function Footer() {
     <footer>
       <div
         className="p-8 w-full bg-cover bg-center flex flex-col items-center gap-6"
-        style={{ backgroundImage: "url('/assets/BG-image-dark.jpg')" }} // ✅ Fixed path
+        style={{ backgroundImage: "url('/assets/BG-image-dark.jpg')" }}
       >
-        {/* Main Logo Centered */}
         <div className="flex justify-center">
           <img
             src="/assets/MainLogo2.png"
@@ -14,7 +13,6 @@ export default function Footer() {
           />
         </div>
 
-        {/* Decorative Elements with Noble Logo */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
           <img
             src="/assets/divright-short.svg"
